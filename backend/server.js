@@ -7,54 +7,33 @@ import eventRoutes from "./routes/eventRoutes.js";
 import registrationRoutes from "./routes/registrationRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 
-
 dotenv.config();
 
-
 const app = express();
-
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-
 // Routes
-
 app.use("/api/events", eventRoutes);
-
 app.use("/api/registrations", registrationRoutes);
-
 app.use("/api/auth", authRoutes);
 
-
-
 // MongoDB Connection
-
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
-
-    console.log("MongoDB connected successfully");
-
+    console.log("✅ MongoDB connected successfully");
   })
   .catch((error) => {
-
-    console.log(
-      "MongoDB connection error:",
-      error
-    );
-
+    console.error("❌ MongoDB connection error:");
+    console.error(error);
   });
 
-
-
 // Server
+const PORT = process.env.PORT || 5000;
 
-app.listen(5000, () => {
-
-  console.log(
-    "Server running on port 5000"
-  );
-
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });

@@ -24,7 +24,7 @@ function UserDashboard() {
       }
 
       const response = await axios.get(
-        `http://https://eventhive-r7w1.onrender.com/api/registrations/user/${user.email}`
+        `https://eventhive-r7w1.onrender.com/api/registrations/user/${user.email}`
       );
 
       setRegistrations(response.data);

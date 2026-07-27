@@ -78,7 +78,7 @@ function Register() {
 
 
       const response = await fetch(
-        "http://https://eventhive-r7w1.onrender.com/api/registrations",
+        "https://eventhive-r7w1.onrender.com/api/registrations",
         {
           method: "POST",
           headers: {

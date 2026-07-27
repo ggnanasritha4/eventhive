@@ -162,7 +162,7 @@ function AdminEvents() {
     try {
 
       await axios.delete(
-        `http://https://eventhive-r7w1.onrender.com/api/events/${id}`
+        `https://eventhive-r7w1.onrender.com/api/events/${id}`
       );
 
 

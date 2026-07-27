@@ -54,7 +54,7 @@ function Login() {
 
 
       const response = await axios.post(
-        "http://https://eventhive-r7w1.onrender.com/api/auth/login",
+        "https://eventhive-r7w1.onrender.com/api/auth/login",
         formData
       );
 

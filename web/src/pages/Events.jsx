@@ -11,7 +11,7 @@ function Events() {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/api/events")
+    fetch("http://https://eventhive-r7w1.onrender.com/api/events")
       .then((response) => response.json())
       .then((data) => {
         setEvents(data);

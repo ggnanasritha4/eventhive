@@ -40,7 +40,7 @@ function AdminEvents() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/events"
+        "http://https://eventhive-r7w1.onrender.com/api/events"
       );
 
       setEvents(response.data);
@@ -77,7 +77,7 @@ function AdminEvents() {
       if (editingId) {
 
         await axios.put(
-          `http://localhost:5000/api/events/${editingId}`,
+          `http://https://eventhive-r7w1.onrender.com/api/events/${editingId}`,
           formData
         );
 
@@ -88,7 +88,7 @@ function AdminEvents() {
 
 
         await axios.post(
-          "http://localhost:5000/api/events",
+          "http://https://eventhive-r7w1.onrender.com/api/events",
           formData
         );
 
@@ -162,7 +162,7 @@ function AdminEvents() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/events/${id}`
+        `http://https://eventhive-r7w1.onrender.com/api/events/${id}`
       );
 
 

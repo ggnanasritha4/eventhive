@@ -21,7 +21,7 @@ function AdminRegistrations() {
   const fetchRegistrations = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/registrations"
+        "http://https://eventhive-r7w1.onrender.com/api/registrations"
       );
 
       setRegistrations(response.data);
@@ -35,7 +35,7 @@ function AdminRegistrations() {
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/events"
+        "http://https://eventhive-r7w1.onrender.com/api/events"
       );
 
       setEvents(response.data);
@@ -56,7 +56,7 @@ function AdminRegistrations() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/registrations/${id}`
+        `http://https://eventhive-r7w1.onrender.com/api/registrations/${id}`
       );
 
       alert("Registration deleted successfully");

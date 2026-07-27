@@ -1,0 +1,205 @@
+/* ==========================
+   AdminRegistrations.css
+========================== */
+
+.admin-registrations-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 35px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+
+.admin-registrations-container h1 {
+  text-align: center;
+  color: #0b1f3a;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* ==========================
+   Controls
+========================== */
+
+.registration-controls {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  flex-wrap: wrap;
+}
+
+.registration-controls select {
+  flex: 1;
+  min-width: 250px;
+  padding: 11px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: .3s;
+  outline: none;
+}
+
+.registration-controls select:focus {
+  border-color: #ff7a00;
+}
+
+.registration-controls button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.registration-controls button:first-of-type {
+  background: #ff7a00;
+  color: #fff;
+}
+
+.registration-controls button:first-of-type:hover {
+  background: #e66d00;
+}
+
+.registration-controls button:last-of-type {
+  background: #0b1f3a;
+  color: #fff;
+}
+
+.registration-controls button:last-of-type:hover {
+  background: #173458;
+}
+
+.registration-count {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b1f3a;
+}
+
+/* ==========================
+   Table
+========================== */
+
+.registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.registrations-table thead {
+  background: #0b1f3a;
+}
+
+.registrations-table thead th {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+.registrations-table tbody td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.registrations-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.registrations-table tbody tr:hover {
+  background: #fff5eb;
+}
+
+.roll-column {
+  color: #ff7a00;
+  font-weight: 700;
+}
+
+/* ==========================
+   Delete Button
+========================== */
+
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #0b1f3a;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.delete-btn:hover {
+  background: #ff7a00;
+  transform: scale(1.08);
+}
+
+/* ==========================
+   Empty State
+========================== */
+
+.registrations-table tbody td[colspan] {
+  padding: 35px;
+  font-size: 15px;
+  color: #777;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px) {
+
+  .admin-registrations-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .admin-registrations-container h1 {
+    font-size: 28px;
+  }
+
+  .registration-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .registration-controls select,
+  .registration-controls button {
+    width: 100%;
+  }
+
+  .registration-count {
+    margin: 10px 0 0;
+    text-align: center;
+  }
+
+  .registrations-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

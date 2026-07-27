@@ -1,0 +1,242 @@
+/* ================================
+   EventHive Events Page
+================================ */
+
+.events-page {
+    min-height: calc(100vh - 140px);
+    padding: 60px 8%;
+    background: #f8fafc;
+}
+
+
+/* Page Heading */
+
+.events-page > h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 45px;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+
+/* Events Grid */
+
+.events-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+    align-items: stretch;
+
+}
+
+
+
+/* Event Card */
+
+.event-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow-sm);
+
+    border-top: 5px solid var(--orange);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 350px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+.event-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+
+/* Event Title */
+
+.event-card h2 {
+
+    color: var(--navy);
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+    min-height: 30px;
+
+}
+
+
+
+/* Event Description */
+
+.event-card p {
+
+    color: #555;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+/* Event Details Section */
+
+.event-details {
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* Labels */
+
+.event-card strong {
+
+    color: var(--navy);
+
+}
+
+
+
+/* Register Button */
+
+.event-card button {
+
+    margin-top: auto;
+
+    padding: 13px;
+
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: var(--orange);
+
+    color: white;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.event-card button:hover {
+
+    background: var(--orange-dark);
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* Empty Events Message */
+
+.no-events {
+
+    text-align: center;
+
+    font-size: 20px;
+
+    color: #777;
+
+}
+
+
+
+/* Loading */
+
+.loading {
+
+    text-align: center;
+
+    font-size: 20px;
+
+    color: var(--navy);
+
+}
+
+
+
+/* ================================
+   Responsive Layout
+================================ */
+
+
+@media(max-width:1100px){
+
+    .events-container {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+    .events-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .events-page {
+
+        padding: 40px 5%;
+
+    }
+
+
+    .events-page > h1 {
+
+        font-size: 32px;
+
+    }
+
+}

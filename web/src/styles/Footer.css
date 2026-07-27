@@ -1,0 +1,69 @@
+/* ================================
+   EventHive Footer
+   Orange + Navy Theme
+================================ */
+
+.footer {
+
+    width: 100%;
+
+    background: var(--navy);
+
+    color: white;
+
+    padding: 25px 8%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 50px;
+
+}
+
+
+
+/* Footer Text */
+
+.footer p {
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    text-align: center;
+
+}
+
+
+
+/* Highlight year/project name */
+
+.footer p::first-letter {
+
+    color: var(--orange);
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .footer {
+
+        padding: 20px 5%;
+
+    }
+
+
+    .footer p {
+
+        font-size: 13px;
+
+    }
+
+}

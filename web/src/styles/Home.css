@@ -1,0 +1,228 @@
+/* ================================
+   EventHive Home Page
+================================ */
+
+
+.home {
+
+    min-height: calc(100vh - 140px);
+
+}
+
+
+
+/* Hero Section */
+
+.hero {
+
+    min-height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--navy),
+        var(--navy-light)
+    );
+
+}
+
+
+
+/* Main Heading */
+
+.hero h1 {
+
+    font-size: 65px;
+
+    color: white;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero h1::first-letter {
+
+    color: var(--orange);
+
+}
+
+
+
+/* Description */
+
+.hero p {
+
+    color: #cbd5e1;
+
+    font-size: 20px;
+
+    max-width: 600px;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* Button */
+
+.hero-btn {
+
+    background: var(--orange);
+
+    color: white;
+
+    padding: 14px 35px;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.hero-btn:hover {
+
+    background: var(--orange-dark);
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+
+/* Features Section */
+
+.about {
+
+    padding: 70px 8%;
+
+    text-align: center;
+
+}
+
+
+
+.about h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 45px;
+
+}
+
+
+
+/* Cards Container */
+
+.feature-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+
+
+/* Feature Cards */
+
+.feature-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: 0.3s ease;
+
+    border-top: 4px solid var(--orange);
+
+}
+
+
+
+.feature-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+
+.feature-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+}
+
+
+
+.feature-card p {
+
+    font-size: 15px;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+
+    .feature-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 17px;
+
+    }
+
+}

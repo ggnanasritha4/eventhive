@@ -1,0 +1,309 @@
+/* ================================
+   EventHive Global Theme
+   Orange + Navy Palette
+================================ */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* ================================
+   CSS Variables
+================================ */
+
+:root {
+
+  /* Main Colors */
+  --navy: #0f172a;
+  --navy-light: #1e293b;
+  --orange: #f97316;
+  --orange-dark: #ea580c;
+
+  /* Background Colors */
+  --background: #f8fafc;
+  --white: #ffffff;
+  --light-orange: #fff7ed;
+
+  /* Text Colors */
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+
+  /* Borders */
+  --border: #e2e8f0;
+
+  /* Effects */
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 10px 25px rgba(15, 23, 42, 0.12);
+
+  /* Radius */
+  --radius: 14px;
+
+}
+
+
+
+/* ================================
+   Reset
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+
+  font-family: "Poppins", sans-serif;
+
+  background: var(--background);
+
+  color: var(--text-dark);
+
+  min-height: 100vh;
+
+}
+
+
+
+#root {
+
+  min-height: 100vh;
+
+}
+
+
+
+/* ================================
+   Links
+================================ */
+
+a {
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
+
+
+
+/* ================================
+   Buttons
+================================ */
+
+button {
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  border: none;
+
+}
+
+
+
+.primary-btn {
+
+  background: var(--orange);
+
+  color: white;
+
+  padding: 12px 28px;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.primary-btn:hover {
+
+  background: var(--orange-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow: var(--shadow-md);
+
+}
+
+
+
+.secondary-btn {
+
+  background: var(--navy);
+
+  color: white;
+
+  padding: 12px 28px;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.secondary-btn:hover {
+
+  background: var(--navy-light);
+
+  transform: translateY(-2px);
+
+}
+
+
+
+/* ================================
+   Cards
+================================ */
+
+.card {
+
+  background: var(--white);
+
+  border-radius: var(--radius);
+
+  padding: 25px;
+
+  box-shadow: var(--shadow-sm);
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: var(--shadow-md);
+
+}
+
+
+
+/* ================================
+   Headings
+================================ */
+
+h1,
+h2,
+h3 {
+
+  color: var(--navy);
+
+  font-weight: 700;
+
+}
+
+
+
+p {
+
+  color: var(--text-light);
+
+  line-height: 1.7;
+
+}
+
+
+
+/* ================================
+   Inputs
+================================ */
+
+input,
+textarea,
+select {
+
+  width: 100%;
+
+  padding: 12px 15px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  outline: none;
+
+  transition: 0.3s;
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+  border-color: var(--orange);
+
+  box-shadow: 0 0 0 3px rgba(249,115,22,0.15);
+
+}
+
+
+
+/* ================================
+   Containers
+================================ */
+
+.container {
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+}
+
+
+
+/* ================================
+   Scrollbar
+================================ */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+  background: var(--orange);
+
+  border-radius: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+  background: #e2e8f0;
+
+}

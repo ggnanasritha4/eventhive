@@ -1,0 +1,80 @@
+/* ==========================
+   Navbar.css
+========================== */
+
+.navbar {
+  background: #0b1f3a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo */
+
+.navbar-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-links a,
+.navbar-logout {
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-logout:hover {
+  color: #ff7a00;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 28px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .navbar-links a,
+  .navbar-logout {
+    font-size: 16px;
+  }
+
+}

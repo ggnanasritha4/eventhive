@@ -15,10 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Debug Log
-console.log("eventRoutes loaded:", typeof eventRoutes);
-
-// Test Routes
+// Debug Routes
 app.get("/", (req, res) => {
   res.send("🚀 EventHive Backend Running");
 });
@@ -30,11 +27,8 @@ app.get("/test", (req, res) => {
   });
 });
 
-// Direct Events Test Route
-app.get("/api/events", (req, res) => {
-  res.json({
-    message: "Direct route working",
-  });
+app.get("/sritha-debug-2026", (req, res) => {
+  res.send("DEBUG ROUTE WORKING");
 });
 
 // API Routes

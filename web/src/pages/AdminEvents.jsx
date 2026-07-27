@@ -40,7 +40,7 @@ function AdminEvents() {
     try {
 
       const response = await axios.get(
-        "http://https://eventhive-r7w1.onrender.com/api/events"
+        "https://eventhive-r7w1.onrender.com/api/events"
       );
 
       setEvents(response.data);
@@ -77,7 +77,7 @@ function AdminEvents() {
       if (editingId) {
 
         await axios.put(
-          `http://https://eventhive-r7w1.onrender.com/api/events/${editingId}`,
+          `https://eventhive-r7w1.onrender.com/api/events/${editingId}`,
           formData
         );
 
@@ -88,7 +88,7 @@ function AdminEvents() {
 
 
         await axios.post(
-          "http://https://eventhive-r7w1.onrender.com/api/events",
+          "https://eventhive-r7w1.onrender.com/api/events",
           formData
         );
 

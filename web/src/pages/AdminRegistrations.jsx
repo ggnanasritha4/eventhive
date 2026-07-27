@@ -21,7 +21,7 @@ function AdminRegistrations() {
   const fetchRegistrations = async () => {
     try {
       const response = await axios.get(
-        "http://https://eventhive-r7w1.onrender.com/api/registrations"
+        "https://eventhive-r7w1.onrender.com/api/registrations"
       );
 
       setRegistrations(response.data);
@@ -35,7 +35,7 @@ function AdminRegistrations() {
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
-        "http://https://eventhive-r7w1.onrender.com/api/events"
+        "https://eventhive-r7w1.onrender.com/api/events"
       );
 
       setEvents(response.data);

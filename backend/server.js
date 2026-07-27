@@ -15,7 +15,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Test Routes
+app.get("/", (req, res) => {
+  res.send("🚀 EventHive Backend Running");
+});
+
+app.get("/test", (req, res) => {
+  res.json({
+    status: "success",
+    message: "Backend is working",
+  });
+});
+
+// API Routes
 app.use("/api/events", eventRoutes);
 app.use("/api/registrations", registrationRoutes);
 app.use("/api/auth", authRoutes);

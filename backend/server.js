@@ -15,6 +15,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Debug Log
+console.log("eventRoutes loaded:", typeof eventRoutes);
+
 // Test Routes
 app.get("/", (req, res) => {
   res.send("🚀 EventHive Backend Running");
@@ -24,6 +27,13 @@ app.get("/test", (req, res) => {
   res.json({
     status: "success",
     message: "Backend is working",
+  });
+});
+
+// Direct Events Test Route
+app.get("/api/events", (req, res) => {
+  res.json({
+    message: "Direct route working",
   });
 });
 
